@@ -1,12 +1,14 @@
 'use strict';
 
 class MathOperations {
-    add(a, b) {
-        return a + b;
+    sum() {
+        let arr = [...arguments];
+        return arr.reduce((a,b)=>(a+b));
     }
 
-    multiply(a, b) {
-        return a * b;
+    multiply() {
+        let arr = [...arguments];
+        return arr.reduce((a,b)=>(a*b));
     }
 }
 
