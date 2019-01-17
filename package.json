@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nyc --reporter=html --reporter=text mocha"
+    "test": "mocha",
+    "lint": "eslint **/*.js",
+    "coverage": "nyc --reporter=html --reporter=text mocha"
   },
   "repository": {
     "type": "git",
